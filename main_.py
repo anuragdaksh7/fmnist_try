@@ -5,8 +5,10 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv(r'C:\Users\anura\OneDrive\Desktop\fashion mnist\fashion-mnist_train.csv')
-data2 = pd.read_csv(r'C:\Users\anura\OneDrive\Desktop\fashion mnist\fashion-mnist_test.csv')
+print("dataset can be downloded from https://www.kaggle.com/datasets/zalando-research/fashionmnist?resource=download")
+
+data = pd.read_csv(r'path to files\fashion-mnist_train.csv')
+data2 = pd.read_csv(r'path to files\fashion-mnist_test.csv')
 
 ll = [f"pixel{i}" for i in range(1,785)]
 inputs = pd.DataFrame(data, columns= ll)
